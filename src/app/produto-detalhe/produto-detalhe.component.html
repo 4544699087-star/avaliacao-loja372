@@ -1,0 +1,15 @@
+<section class="detalhe" *ngIf="produto; else naoEncontrado">
+  <a routerLink="/produtos">&larr; Voltar para produtos</a>
+  <div class="conteudo">
+    <img [src]="produto.imagem" [alt]="produto.nome">
+    <div>
+      <h1>{{ produto.nome }}</h1>
+      <p>{{ produto.descricaoDetalhada }}</p>
+      <strong>R$ {{ produto.preco.toFixed(2) }}</strong>
+    </div>
+  </div>
+</section>
+
+<ng-template #naoEncontrado>
+  <p class="erro">Produto não encontrado.</p>
+</ng-template>

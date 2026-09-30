@@ -1,0 +1,10 @@
+.contato {
+  padding: 40px;
+}
+.contato ul {
+  list-style: none;
+  padding: 0;
+}
+.contato li {
+  margin-bottom: 8px;
+}

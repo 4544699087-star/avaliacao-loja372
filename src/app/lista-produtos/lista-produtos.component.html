@@ -1,0 +1,11 @@
+<section class="produtos">
+  <h1>Nossos Produtos</h1>
+  <div class="grid">
+    <div class="card" *ngFor="let produto of produtos" [routerLink]="['/produtos', produto.id]">
+      <img [src]="produto.imagem" [alt]="produto.nome">
+      <h2>{{ produto.nome }}</h2>
+      <p>{{ produto.descricao }}</p>
+      <strong>R$ {{ produto.preco.toFixed(2) }}</strong>
+    </div>
+  </div>
+</section>

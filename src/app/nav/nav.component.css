@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  gap: 24px;
+  background: #222;
+  padding: 16px 24px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu a.ativo {
+  color: #ffb703;
+}

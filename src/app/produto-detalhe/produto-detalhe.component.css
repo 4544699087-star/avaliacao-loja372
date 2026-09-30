@@ -1,0 +1,12 @@
+.detalhe { padding: 40px; }
+.conteudo {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.conteudo img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+.erro { padding: 40px; }
